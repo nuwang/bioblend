@@ -332,7 +332,7 @@ class CloudManLauncher(object):
                     cmsg.authorize(
                         src_group=cmsg,
                         ip_protocol='tcp',
-                        from_port=0,
+                        from_port=1,
                         to_port=65535)
                 except EC2ResponseError as e:
                     err_msg = "A problem with security group authorization: {0} " \
